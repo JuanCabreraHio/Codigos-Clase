@@ -18,16 +18,18 @@ Informar si lo adivino o no
     std::cin >> guessed_numbrer; // Determina la variable que declare, Cin es herramienta de lectura
 
     if (guessed_numbrer == NUM){ 
-    /* 
+    /* Determina que si sudece una cosa, esta lo hara
     == Igual, != Desigualdad, < menor, > mayor, <= menor igual, >= mayor igual, ** Elevar un numero
     */
-        std::cout <<"GANASTE!!!\n";
-    }
-    else {
+        std::cout <<"GANASTE!!!\n";  
+        }
+    else if (guessed_numbrer > NUM) {
         /* Es cuando la respuesta noes la pedida, por lo tanto se considera falsa*/
-        std::cout <<"PERDIO, INTENTELO DE NUEVO\n";
+        std::cout <<"Te pasaste\n";
+        }
+    else { // es el menor
+        std::cout << "Te falta\n";
     }
-
 
     return 0;
   }
