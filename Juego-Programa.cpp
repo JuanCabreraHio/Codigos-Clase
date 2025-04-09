@@ -15,7 +15,14 @@ Informar si lo adivino o no
      es constante y entero,*/
     int guessed_numbrer;
     std::cout <<"Adivina un numero entre 1 y 100:\n"; // Mostrar el comentario
-    std::cin >> guessed_numbrer; // Determina la variable que declare
+    std::cin >> guessed_numbrer; // Determina la variable que declare, Cin es herramienta de lectura
 
+    if (guessed_numbrer == NUM){ 
+    /* 
+    == Igual, != Desigualdad, < menor, > mayor, <= menor igual, >= mayor igual, ** Elevar un numero
+    */
+        std::cout <<"GANASTE!!!\n";
+
+    }
     return 0;
   }
