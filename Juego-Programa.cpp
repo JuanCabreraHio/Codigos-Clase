@@ -22,7 +22,12 @@ Informar si lo adivino o no
     == Igual, != Desigualdad, < menor, > mayor, <= menor igual, >= mayor igual, ** Elevar un numero
     */
         std::cout <<"GANASTE!!!\n";
-
     }
+    else {
+        /* Es cuando la respuesta noes la pedida, por lo tanto se considera falsa*/
+        std::cout <<"PERDIO, INTENTELO DE NUEVO\n";
+    }
+
+
     return 0;
   }
